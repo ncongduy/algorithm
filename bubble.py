@@ -16,3 +16,5 @@ def bubble_sort(arr):
 
 
 print(bubble_sort([32, 29, 15, 7, 5]))
+
+# O(n^2)
