@@ -15,6 +15,6 @@ def bubble_sort(arr):
     return arr
 
 
-print(bubble_sort([32, 29, 15, 7, 5]))
+print(bubble_sort([32, 29, 15, 7, 5, -3, 88, 100]))
 
 # O(n^2)
