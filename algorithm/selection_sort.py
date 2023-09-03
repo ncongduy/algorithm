@@ -9,10 +9,12 @@ def selection_sort(arr):
 
             if arr[j] < arr[min_index]:
                 min_index = j
-        # swap            
-        temp = arr[i]
-        arr[i] = arr[min_index]
-        arr[min_index] = temp
+
+        if arr[min_index] < arr[i]:
+            print("SWAP")
+            temp = arr[i]
+            arr[i] = arr[min_index]
+            arr[min_index] = temp
 
     return arr
 
