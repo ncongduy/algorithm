@@ -10,11 +10,11 @@ def bubble_sort(arr):
             print(f'{arr} - {arr[j]} - {arr[j+1]}')
 
             if(arr[j] > arr[j+1]):
-                # swap
                 temp = arr[j + 1]
                 arr[j + 1] = arr[j]
                 arr[j] = temp
                 swap = True
+                print("SWAP")
             
         if not swap:
             break
