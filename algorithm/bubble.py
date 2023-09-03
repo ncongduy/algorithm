@@ -1,15 +1,16 @@
 def bubble_sort(arr): 
-    length = len(arr)
+    size = len(arr)
 
-    for i, it in enumerate(arr):
+    for i in range(size):
         swap = False
-        for j, jt in enumerate(arr):
-            if j == length - 1:
+        for j in range(size):
+            if j == size - 1:
                 break
 
             print(f'{arr} - {arr[j]} - {arr[j+1]}')
 
             if(arr[j] > arr[j+1]):
+                # swap
                 temp = arr[j + 1]
                 arr[j + 1] = arr[j]
                 arr[j] = temp
@@ -21,7 +22,7 @@ def bubble_sort(arr):
     return arr
 
 
-# print(bubble_sort([32, 29, 15, 7]))
+print(bubble_sort([32, 29, 15, 7]))
 # print(bubble_sort([32, 1, 2, 3]))
 # print(bubble_sort([32, 1, 15, 2, 3]))
 # print(bubble_sort([1, 2, 3, 4, 5]))
